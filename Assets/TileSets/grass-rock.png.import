@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3carj0afaq1r"
-path="res://.godot/imported/Decorations (32x32).png-3eacaf79e052d87cfeeab3ed66bf54ec.ctex"
+uid="uid://cv277dkvohmfw"
+path="res://.godot/imported/grass-rock.png-8390324adaae2e0b89cc09c79d8cf512.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSets/Decorations (32x32).png"
-dest_files=["res://.godot/imported/Decorations (32x32).png-3eacaf79e052d87cfeeab3ed66bf54ec.ctex"]
+source_file="res://Assets/TileSets/grass-rock.png"
+dest_files=["res://.godot/imported/grass-rock.png-8390324adaae2e0b89cc09c79d8cf512.ctex"]
 
 [params]
 

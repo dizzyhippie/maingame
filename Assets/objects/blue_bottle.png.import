@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv277dkvohmfw"
-path="res://.godot/imported/Grass-Terrain (32x32).png-0ff5684ba1c80196f402082d3158758b.ctex"
+uid="uid://cff6j7ga3xqtn"
+path="res://.godot/imported/blue_bottle.png-4ae661240b30fa0f3a0e0fe3fcceb8f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSets/Grass-Terrain (32x32).png"
-dest_files=["res://.godot/imported/Grass-Terrain (32x32).png-0ff5684ba1c80196f402082d3158758b.ctex"]
+source_file="res://Assets/objects/blue_bottle.png"
+dest_files=["res://.godot/imported/blue_bottle.png-4ae661240b30fa0f3a0e0fe3fcceb8f1.ctex"]
 
 [params]
 
