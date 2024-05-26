@@ -1,3 +1,132 @@
-[gd_scene format=3 uid="uid://ob2omegq0tcq"]
+[gd_scene load_steps=7 format=3 uid="uid://ob2omegq0tcq"]
 
-[node name="Start" type="Node2D"]
+[ext_resource type="Script" path="res://Scenes/scripts/start.gd" id="1_xhm7f"]
+[ext_resource type="Texture2D" uid="uid://c2ajb584uma4w" path="res://Assets/backgrounds/back.png" id="2_wk8r1"]
+[ext_resource type="Texture2D" uid="uid://bew0qpf2jhuik" path="res://Assets/backgrounds/buildings.png" id="3_57a8d"]
+[ext_resource type="Texture2D" uid="uid://snt0b47ivcj8" path="res://Assets/backgrounds/highway.png" id="4_8ku7k"]
+[ext_resource type="Texture2D" uid="uid://dt54eratm8e3u" path="res://Assets/backgrounds/palm-tree.png" id="5_spbfv"]
+
+[sub_resource type="SystemFont" id="SystemFont_tfxwq"]
+font_names = PackedStringArray("Torchzilla")
+multichannel_signed_distance_field = true
+msdf_pixel_range = 32
+msdf_size = 500
+oversampling = 10.0
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_xhm7f")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="backdrop" type="TextureRect" parent="Node2D"]
+clip_children = 1
+offset_right = 1157.0
+offset_bottom = 646.0
+
+[node name="backdrop1" type="TextureRect" parent="Node2D/backdrop"]
+texture_filter = 1
+offset_right = 800.0
+offset_bottom = 646.0
+texture = ExtResource("2_wk8r1")
+
+[node name="backdrop2" type="TextureRect" parent="Node2D/backdrop"]
+texture_filter = 1
+offset_left = 800.0
+offset_right = 1600.0
+offset_bottom = 646.0
+texture = ExtResource("2_wk8r1")
+
+[node name="buildings" type="Sprite2D" parent="Node2D/backdrop"]
+position = Vector2(260.533, 330)
+scale = Vector2(2.06667, 2.06667)
+texture = ExtResource("3_57a8d")
+
+[node name="buildings2" type="Sprite2D" parent="Node2D/backdrop"]
+position = Vector2(700, 330)
+scale = Vector2(2.06667, 2.06667)
+texture = ExtResource("3_57a8d")
+flip_h = true
+
+[node name="buildings3" type="Sprite2D" parent="Node2D/backdrop"]
+position = Vector2(1203, 330)
+scale = Vector2(2.06667, 2.06667)
+texture = ExtResource("3_57a8d")
+flip_h = true
+
+[node name="highway1" type="Sprite2D" parent="Node2D/backdrop"]
+position = Vector2(451, 526)
+texture = ExtResource("4_8ku7k")
+
+[node name="highway2" type="Sprite2D" parent="Node2D/backdrop"]
+position = Vector2(1346, 526)
+texture = ExtResource("4_8ku7k")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+clip_contents = false
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 222.0
+offset_top = 49.0
+offset_right = 1201.0
+offset_bottom = 307.0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/normal_font = SubResource("SystemFont_tfxwq")
+theme_override_font_sizes/normal_font_size = 90
+text = "The Adventures of DizzyMo"
+scroll_active = false
+tab_size = 17
+context_menu_enabled = true
+
+[node name="Start Game" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 233.0
+offset_right = 679.0
+offset_bottom = 264.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Start Game"
+
+[node name="DEBUG" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 268.0
+offset_right = 679.0
+offset_bottom = 299.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "DEBUG"
+
+[node name="Settings" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 303.0
+offset_right = 679.0
+offset_bottom = 334.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Settings"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 338.0
+offset_right = 679.0
+offset_bottom = 369.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Quit"
+
+[node name="Palm-tree" type="Sprite2D" parent="."]
+position = Vector2(162, 471)
+texture = ExtResource("5_spbfv")
+
+[node name="Palm-tree2" type="Sprite2D" parent="."]
+position = Vector2(937, 471)
+texture = ExtResource("5_spbfv")
+flip_h = true
+
+[connection signal="pressed" from="Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="DEBUG" to="." method="_on_debug_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

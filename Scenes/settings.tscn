@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3dejckgi5ekt"]
+
+[ext_resource type="Script" path="res://Scenes/scripts/settings.gd" id="1_prfmc"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_prfmc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Toggle Music" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Toggle Music"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
