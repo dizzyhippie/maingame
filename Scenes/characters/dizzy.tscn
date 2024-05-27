@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://g7wx5c2uxvq5"]
 
-[ext_resource type="Script" path="res://Scenes/characters/dizzy.gd" id="1_0ptr2"]
+[ext_resource type="Script" path="res://Scenes/scripts/dizzy.gd" id="1_0ptr2"]
 [ext_resource type="Texture2D" uid="uid://c3kiemgmsqdx" path="res://Assets/characters/dizzy-walking-4.png" id="2_lq6eh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0aou"]

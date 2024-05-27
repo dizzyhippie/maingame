@@ -1,14 +1,17 @@
-[gd_scene load_steps=16 format=3 uid="uid://cxfsepip167el"]
+[gd_scene load_steps=20 format=3 uid="uid://cxfsepip167el"]
 
 [ext_resource type="Texture2D" uid="uid://dx1jv0yws7g2g" path="res://Assets/TileSets/dizzy-room.png" id="1_wsjcm"]
-[ext_resource type="Texture2D" uid="uid://errg6oy3edvg" path="res://Assets/TileSets/Platforms (32x32).png" id="2_le8cc"]
+[ext_resource type="Texture2D" uid="uid://errg6oy3edvg" path="res://Assets/TileSets/shelves.png" id="2_le8cc"]
 [ext_resource type="Texture2D" uid="uid://b3carj0afaq1r" path="res://Assets/TileSets/decor.png" id="3_qivf8"]
-[ext_resource type="Texture2D" uid="uid://gihf7y8br2b3" path="res://Assets/TileSets/01-Artboard_booop (1).png" id="4_cu2fi"]
+[ext_resource type="Texture2D" uid="uid://gihf7y8br2b3" path="res://Assets/TileSets/various.png" id="4_cu2fi"]
 [ext_resource type="Texture2D" uid="uid://cff6j7ga3xqtn" path="res://Assets/objects/blue_bottle.png" id="5_r0rie"]
+[ext_resource type="Texture2D" uid="uid://bm178yfn87axn" path="res://Assets/TileSets/bedge.png" id="5_sp8np"]
 [ext_resource type="Texture2D" uid="uid://cnjy4a4ao01hs" path="res://Assets/objects/green_bottle.png" id="6_2qeq8"]
+[ext_resource type="Texture2D" uid="uid://cw6ywl7ca1eoy" path="res://Assets/objects/plant.png" id="6_v1bsb"]
 [ext_resource type="Texture2D" uid="uid://cshsio1anipuo" path="res://Assets/objects/blue_bottle_turned.png" id="7_6ex6v"]
 [ext_resource type="PackedScene" uid="uid://g7wx5c2uxvq5" path="res://Scenes/characters/dizzy.tscn" id="8_ytf16"]
 [ext_resource type="PackedScene" uid="uid://2ia0e6rchl08" path="res://Scenes/characters/marms.tscn" id="9_mrjv8"]
+[ext_resource type="Texture2D" uid="uid://siqeabs6sr13" path="res://Assets/objects/bed.png" id="10_lti3a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_taxxu"]
 texture = ExtResource("1_wsjcm")
@@ -722,12 +725,63 @@ texture_region_size = Vector2i(32, 32)
 5:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:9/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ikoco"]
+texture = ExtResource("5_sp8np")
+texture_region_size = Vector2i(32, 32)
+5:9/0 = 0
+5:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:9/0/physics_layer_0/angular_velocity = 0.0
+5:8/0 = 0
+5:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:8/0/physics_layer_0/angular_velocity = 0.0
+6:8/0 = 0
+6:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:8/0/physics_layer_0/angular_velocity = 0.0
+6:9/0 = 0
+6:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:9/0/physics_layer_0/angular_velocity = 0.0
+3:9/0 = 0
+3:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:9/0/physics_layer_0/angular_velocity = 0.0
+3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:9/0 = 0
+2:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:9/0/physics_layer_0/angular_velocity = 0.0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:9/0 = 0
+1:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:9/0/physics_layer_0/angular_velocity = 0.0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:9/0 = 0
+0:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:9/0/physics_layer_0/angular_velocity = 0.0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:8/0 = 0
+0:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:8/0/physics_layer_0/angular_velocity = 0.0
+1:8/0 = 0
+1:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:8/0/physics_layer_0/angular_velocity = 0.0
+4:6/0 = 0
+4:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:6/0/physics_layer_0/angular_velocity = 0.0
+5:6/0 = 0
+5:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:6/0/physics_layer_0/angular_velocity = 0.0
+6:6/0 = 0
+6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:6/0/physics_layer_0/angular_velocity = 0.0
+7:6/0 = 0
+7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:6/0/physics_layer_0/angular_velocity = 0.0
+
 [sub_resource type="TileSet" id="TileSet_825wy"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_obddk")
 sources/1 = SubResource("TileSetAtlasSource_qbips")
 sources/2 = SubResource("TileSetAtlasSource_4mj37")
+sources/3 = SubResource("TileSetAtlasSource_ikoco")
 
 [node name="bedroom" type="Node2D"]
 
@@ -741,16 +795,25 @@ layer_0/tile_data = PackedInt32Array(3, 131072, 14, 2, 131072, 14, 1, 131072, 14
 texture_filter = 1
 tile_set = SubResource("TileSet_825wy")
 format = 2
-layer_0/tile_data = PackedInt32Array(262159, 262144, 2, 327693, 262144, 2, 131082, 65536, 1, 131084, 196608, 1, 131083, 131072, 1, 13, 1441794, 9, 14, 1507330, 9, 65549, 1441794, 10, 65550, 1507330, 10, 65539, 2228226, 9, 65540, 2293762, 9, 131075, 2228226, 10, 131076, 2293762, 10, 196609, 1638402, 10, 196610, 1703938, 10, 262145, 1638402, 11, 262146, 1703938, 11)
+layer_0/tile_data = PackedInt32Array(262159, 262144, 2, 327693, 262144, 2, 131082, 65536, 1, 131084, 196608, 1, 131083, 131072, 1, 13, 393219, 6, 14, 393219, 6, 65549, 1441794, 9, 65550, 1507330, 9, 65539, 2228226, 9, 65540, 2293762, 9, 131075, 2228226, 10, 131076, 2293762, 10, 196609, 1638402, 10, 196610, 1703938, 10, 262145, 1638402, 11, 262146, 1703938, 11, 9, 262147, 6, 10, 327683, 6, 11, 327683, 6, 15, 393219, 6, 16, 327683, 6, 17, 393219, 6, 18, 393219, 6, 19, 458755, 6, 12, 393219, 6, 131086, 1507330, 10, 131085, 1441794, 10, 196621, 262144, 1, 196622, 262144, 1)
 
 [node name="SceneObjects" type="Node2D" parent="."]
+
+[node name="plant" type="TextureRect" parent="SceneObjects"]
+texture_filter = 1
+offset_left = 338.0
+offset_top = 33.0
+offset_right = 379.0
+offset_bottom = 74.0
+texture = ExtResource("6_v1bsb")
+expand_mode = 1
 
 [node name="bottle_1" type="TextureRect" parent="SceneObjects"]
 texture_filter = 1
 offset_left = 307.0
-offset_top = 25.0
+offset_top = 26.0
 offset_right = 347.0
-offset_bottom = 65.0
+offset_bottom = 66.0
 texture = ExtResource("5_r0rie")
 
 [node name="bottle_2" type="TextureRect" parent="SceneObjects"]
@@ -769,14 +832,32 @@ offset_right = 354.0
 offset_bottom = 66.0
 texture = ExtResource("7_6ex6v")
 
+[node name="bed" type="TextureRect" parent="SceneObjects"]
+texture_filter = 1
+offset_left = 588.0
+offset_top = 62.0
+offset_right = 645.0
+offset_bottom = 119.0
+texture = ExtResource("10_lti3a")
+expand_mode = 1
+flip_h = true
+
 [node name="Dizzy" parent="." instance=ExtResource("8_ytf16")]
 texture_filter = 1
-position = Vector2(426, -173)
+position = Vector2(444, -174)
 
 [node name="Camera2D" type="Camera2D" parent="Dizzy"]
 texture_filter = 1
 position = Vector2(145, 270)
 zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 10.0
+drag_horizontal_offset = 0.11
+drag_vertical_offset = -0.2
+drag_left_margin = 1.0
+drag_top_margin = 0.81
 
 [node name="Marms" parent="." instance=ExtResource("9_mrjv8")]
-position = Vector2(240, -7)
+position = Vector2(266, -7)

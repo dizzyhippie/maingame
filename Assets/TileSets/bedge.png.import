@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://errg6oy3edvg"
-path="res://.godot/imported/Platforms (32x32).png-f624b5049b957603087aa112636c1b03.ctex"
+uid="uid://bm178yfn87axn"
+path="res://.godot/imported/bedge.png-af81860d99b1081b75a7d28751fbf9fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSets/Platforms (32x32).png"
-dest_files=["res://.godot/imported/Platforms (32x32).png-f624b5049b957603087aa112636c1b03.ctex"]
+source_file="res://Assets/TileSets/bedge.png"
+dest_files=["res://.godot/imported/bedge.png-af81860d99b1081b75a7d28751fbf9fe.ctex"]
 
 [params]
 
