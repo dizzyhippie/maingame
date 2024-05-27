@@ -795,41 +795,41 @@ layer_0/tile_data = PackedInt32Array(3, 131072, 14, 2, 131072, 14, 1, 131072, 14
 texture_filter = 1
 tile_set = SubResource("TileSet_825wy")
 format = 2
-layer_0/tile_data = PackedInt32Array(262159, 262144, 2, 327693, 262144, 2, 131082, 65536, 1, 131084, 196608, 1, 131083, 131072, 1, 13, 393219, 6, 14, 393219, 6, 65549, 1441794, 9, 65550, 1507330, 9, 65539, 2228226, 9, 65540, 2293762, 9, 131075, 2228226, 10, 131076, 2293762, 10, 196609, 1638402, 10, 196610, 1703938, 10, 262145, 1638402, 11, 262146, 1703938, 11, 9, 262147, 6, 10, 327683, 6, 11, 327683, 6, 15, 393219, 6, 16, 327683, 6, 17, 393219, 6, 18, 393219, 6, 19, 458755, 6, 12, 393219, 6, 131086, 1507330, 10, 131085, 1441794, 10, 196621, 262144, 1, 196622, 262144, 1)
+layer_0/tile_data = PackedInt32Array(262159, 262144, 2, 327693, 262144, 2, 131082, 65536, 1, 131084, 196608, 1, 131083, 131072, 1, 13, 393219, 6, 14, 393219, 6, 65550, 1441794, 9, 65539, 2228226, 9, 65540, 2293762, 9, 131075, 2228226, 10, 131076, 2293762, 10, 196609, 1638402, 10, 196610, 1703938, 10, 262145, 1638402, 11, 262146, 1703938, 11, 9, 262147, 6, 10, 327683, 6, 11, 327683, 6, 15, 393219, 6, 16, 327683, 6, 17, 393219, 6, 18, 393219, 6, 19, 458755, 6, 12, 393219, 6, 131086, 1441794, 10, 196621, 262144, 1, 196622, 262144, 1, 131087, 1507330, 10, 65551, 1507330, 9)
 
 [node name="SceneObjects" type="Node2D" parent="."]
 
 [node name="plant" type="TextureRect" parent="SceneObjects"]
 texture_filter = 1
-offset_left = 338.0
-offset_top = 33.0
-offset_right = 379.0
-offset_bottom = 74.0
+offset_left = 337.0
+offset_top = 32.0
+offset_right = 378.0
+offset_bottom = 73.0
 texture = ExtResource("6_v1bsb")
 expand_mode = 1
 
 [node name="bottle_1" type="TextureRect" parent="SceneObjects"]
 texture_filter = 1
 offset_left = 307.0
-offset_top = 26.0
+offset_top = 25.0
 offset_right = 347.0
-offset_bottom = 66.0
+offset_bottom = 65.0
 texture = ExtResource("5_r0rie")
 
 [node name="bottle_2" type="TextureRect" parent="SceneObjects"]
 texture_filter = 1
 offset_left = 322.0
-offset_top = 26.0
+offset_top = 25.0
 offset_right = 362.0
-offset_bottom = 66.0
+offset_bottom = 65.0
 texture = ExtResource("6_2qeq8")
 
 [node name="bottle_3" type="TextureRect" parent="SceneObjects"]
 texture_filter = 1
 offset_left = 314.0
-offset_top = 26.0
+offset_top = 25.0
 offset_right = 354.0
-offset_bottom = 66.0
+offset_bottom = 65.0
 texture = ExtResource("7_6ex6v")
 
 [node name="bed" type="TextureRect" parent="SceneObjects"]
@@ -842,23 +842,19 @@ texture = ExtResource("10_lti3a")
 expand_mode = 1
 flip_h = true
 
+[node name="Marms" parent="." instance=ExtResource("9_mrjv8")]
+position = Vector2(262, -9)
+script = null
+
 [node name="Dizzy" parent="." instance=ExtResource("8_ytf16")]
 texture_filter = 1
 position = Vector2(444, -174)
 
-[node name="Camera2D" type="Camera2D" parent="Dizzy"]
+[node name="DizzyCamera" type="Camera2D" parent="Dizzy"]
 texture_filter = 1
 position = Vector2(145, 270)
-zoom = Vector2(3, 3)
+zoom = Vector2(3.5, 3.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
 rotation_smoothing_speed = 10.0
-drag_horizontal_offset = 0.11
-drag_vertical_offset = -0.2
-drag_left_margin = 1.0
-drag_top_margin = 0.81
-
-[node name="Marms" parent="." instance=ExtResource("9_mrjv8")]
-position = Vector2(266, -7)
-script = null
